@@ -1,9 +1,10 @@
-
 # ModTemplatez
 
 基于Architectury Loom模版的Minecraft Forge模组开发环境。
 
 mc版本1.20.1，默认forge版本47.3.7，辅助模组：jei，jade，modern-ui，jech
+
+部署后，先进gradle点一下Tasks-build-build，这样客户端和服务端的运行就出来了
 
 ## Features
 
@@ -22,6 +23,7 @@ mc版本1.20.1，默认forge版本47.3.7，辅助模组：jei，jade，modern-ui
 ## Changing target MC version
 
 If you want to change target version from 1.16 to some other version, you need to change these values in `gradle.properties`:
+
 - `minecraft_version`
 - choose corresponding `forge_version` and `loader_version_range`
 - `parchment_version` or `yarn_version`, if you're not using "official" mapping

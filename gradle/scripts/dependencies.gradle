@@ -106,7 +106,7 @@ dependencies {
 
     modCompileOnly("mezz.jei:jei-$project.minecraft_version-forge-api:$project.jei_version") { transitive = false }
     modCompileOnly("mezz.jei:jei-$project.minecraft_version-common-api:$project.jei_version") { transitive = false }
-    modImplementation("maven.modrinth:jade-1.20.1-forge-$project.jade_version")
+    modImplementation("maven.modrinth:jade:$project.jade_version")
 
 
     modRuntimeOnly("mezz.jei:jei-$project.minecraft_version-forge:$project.jei_version") { transitive = false }
