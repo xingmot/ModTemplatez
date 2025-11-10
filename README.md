@@ -1,9 +1,9 @@
 
 # ModTemplatez
 
-An Architectury Loom based template workspace for Minecraft Forge mod development.
+基于Architectury Loom模版的Minecraft Forge模组开发环境。
 
-This mod template is initially configured to provide support for 1.16 Forge mod developing, but you can easily change supported version by modifying `gradle.properties`
+mc版本1.20.1，默认forge版本47.3.7，辅助模组：jei，jade，modern-ui，jech
 
 ## Features
 
