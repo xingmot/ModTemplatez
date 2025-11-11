@@ -4,7 +4,7 @@
 
 mc版本1.20.1，默认forge版本47.3.7，辅助模组：jei，jade，modern-ui，jech
 
-部署后，先进gradle点一下Tasks-build-build，这样客户端和服务端的运行就出来了
+clone时路径里不要有中文，否则部署后两个运行会出不来（虽然runclient还能用）
 
 ## Features
 
