@@ -98,6 +98,9 @@ repositories {
 }
 
 dependencies {
+    // Mixin Extras
+    implementation(annotationProcessor("io.github.llamalad7:mixinextras-common:$project.mixinextras_version"))
+    implementation(include("io.github.llamalad7:mixinextras-forge:$project.mixinextras_version"))
 //    file("./gradle/libs").eachFile {
 //        if (it.isFile() && it.name.endsWith(".jar")) {
 //            modImplementation(files(rootDir.relativePath(it)))
@@ -110,8 +113,7 @@ dependencies {
 
 
     modRuntimeOnly("mezz.jei:jei-$project.minecraft_version-forge:$project.jei_version") { transitive = false }
-    // 加不了，目前高版本architectury.loom会导致崩溃，估计只有gtlcore的那个1.6-SNAPSHOT版本能用
-//    modRuntimeOnly("maven.modrinth:embeddium:0.3.30+mc1.20.1")
+    modLocalRuntime("maven.modrinth:embeddium:0.3.30+mc1.20.1")
     modLocalRuntime("maven.modrinth:modern-ui:3.12.0.1")
     modLocalRuntime("dev:jecharacters:1.20.1-forge-4.5.11-dev-shadow")
     // additional dependencies can be specified using loom's regular format
